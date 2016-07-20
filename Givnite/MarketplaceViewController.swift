@@ -13,13 +13,10 @@ import FirebaseStorage
 
 class MarketplaceViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate  {
 
-
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var searchBarText: UISearchBar!
     
-  
-
     let storageRef = FIRStorage.storage().referenceForURL("gs://givniteapp.appspot.com")
     let dataRef = FIRDatabase.database().referenceFromURL("https://givniteapp.firebaseio.com/")
     

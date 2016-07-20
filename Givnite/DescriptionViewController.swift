@@ -227,6 +227,9 @@ class DescriptionViewController: UIViewController, UITextFieldDelegate, UITextVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.imageView.image = self.image
+        self.imageView.layer.cornerRadius = 10
+        self.imageView.clipsToBounds = true
         bookName.delegate = self
         bookDescription.delegate = self
         bookPrice.delegate = self
