@@ -54,6 +54,12 @@ class MarketItemViewController: UIViewController {
         super.viewDidLoad()
         
         self.imageView.image = self.image
+        self.imageView.layer.cornerRadius = 10
+        self.imageView.clipsToBounds = true
+        //self.imageView.layer.borderWidth = 2
+        
+        //self.imageView.layer.borderColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1.0).CGColor
+
         self.bookName.text = self.name
         self.bookPrice.text = self.price
         self.bookDescription.text = self.bkdescription

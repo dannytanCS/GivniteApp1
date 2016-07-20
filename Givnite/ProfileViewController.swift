@@ -55,7 +55,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         self.view.bringSubviewToFront(addButton)
         self.profilePicture.layer.cornerRadius = self.profilePicture.frame.size.width/2
         self.profilePicture.clipsToBounds = true
-        self.profilePicture.layer.borderWidth = 5
+        self.profilePicture.layer.borderWidth = 2
         self.profilePicture.layer.borderColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1.0).CGColor
         loadImages()
         schoolInfo()

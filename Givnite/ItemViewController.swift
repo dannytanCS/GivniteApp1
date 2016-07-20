@@ -58,6 +58,8 @@ class ItemViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         self.bookName.userInteractionEnabled = false
         
         self.imageView.image = self.image
+        self.imageView.layer.cornerRadius = 10
+        self.imageView.clipsToBounds = true
         
         self.doneButton.hidden = true
         self.bookName.delegate = self
