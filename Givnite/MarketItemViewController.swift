@@ -82,6 +82,7 @@ class MarketItemViewController: UIViewController {
                 self.bookDescription.text = bookDescription
             }
             
+            
             let itemDictionary = snapshot.value!["images"] as! NSDictionary
 
             let sortKeys = itemDictionary.keysSortedByValueUsingComparator {

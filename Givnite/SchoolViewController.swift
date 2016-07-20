@@ -187,10 +187,15 @@ class SchoolViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        guard let text = textField.text else { return true }
+        if textField == self.GraduationYear {
+            guard let text = textField.text else { return true }
         
-        let newLength = text.characters.count + string.characters.count - range.length
-        return newLength <= 4
+            let newLength = text.characters.count + string.characters.count - range.length
+            return newLength <= 4
+        }
+        else {
+            return true
+        }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

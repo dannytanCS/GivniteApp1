@@ -168,8 +168,15 @@ class MarketplaceViewController: UIViewController, UICollectionViewDelegate, UIC
                                         if let bookName = keyDictionary["book name"] as? String {
                                             self.bookNameArray.append(bookName)
                                         }
+                                        
+                                        else {
+                                            self.bookNameArray.append("")
+                                        }
                                         if let bookPrice = keyDictionary["price"] as? String {
                                             self.bookPriceArray.append(bookPrice)
+                                        }
+                                        else {
+                                            self.bookPriceArray.append("")
                                         }
                                         if let userID = keyDictionary["user"] as? String {
                                             self.userArray.append(userID)
@@ -177,6 +184,9 @@ class MarketplaceViewController: UIViewController, UICollectionViewDelegate, UIC
                                         
                                         if let bookDescription  = keyDictionary["description"] as? String {
                                             self.descriptionArray.append(bookDescription)
+                                        }
+                                        else {
+                                            self.descriptionArray.append("")
                                         }
                                         
                                     }

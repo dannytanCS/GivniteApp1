@@ -52,6 +52,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     override func viewDidLoad() {
     
         super.viewDidLoad()
+        self.view.bringSubviewToFront(name)
         self.view.bringSubviewToFront(addButton)
         self.profilePicture.layer.cornerRadius = self.profilePicture.frame.size.width/2
         self.profilePicture.clipsToBounds = true

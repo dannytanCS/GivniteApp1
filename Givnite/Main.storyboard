@@ -650,7 +650,7 @@
                         <outlet property="doneButton" destination="0Uo-qj-7h4" id="ROT-Wc-ZTH"/>
                         <outlet property="graduationYearLabel" destination="zoN-cL-aij" id="D5R-5D-t5t"/>
                         <outlet property="majorLabel" destination="F2W-Ue-4s4" id="IhF-12-eza"/>
-                        <outlet property="name" destination="8mu-uk-JDA" id="xqT-9s-LSz"/>
+                        <outlet property="name" destination="8mu-uk-JDA" id="vde-n3-VdH"/>
                         <outlet property="profilePicture" destination="eTL-Kz-Lda" id="UAY-Jz-ykb"/>
                         <outlet property="schoolNameLabel" destination="vPE-Q3-5XA" id="ddD-Dp-da6"/>
                         <segue destination="jcF-Ad-o52" kind="modal" identifier="showImage" id="5UY-9r-GII"/>
