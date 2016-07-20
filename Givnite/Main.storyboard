@@ -683,17 +683,6 @@
                                     <action selector="photoLibrary:" destination="vZO-F9-SpX" eventType="touchUpInside" id="S11-QP-gin"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-jV-5Fq">
-                                <rect key="frame" x="310" y="20" width="45" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="OdS-GY-aYG"/>
-                                    <constraint firstAttribute="height" constant="45" id="RU1-34-UF4"/>
-                                </constraints>
-                                <state key="normal" image="Quit Button"/>
-                                <connections>
-                                    <segue destination="WKj-cM-742" kind="modal" id="DQM-6W-L0H"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVY-lh-23t">
                                 <rect key="frame" x="152" y="576" width="71" height="71"/>
                                 <constraints>
@@ -713,6 +702,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ROo-PD-UsK">
                                 <rect key="frame" x="0.0" y="135" width="375" height="375"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-jV-5Fq">
+                                <rect key="frame" x="310" y="20" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="OdS-GY-aYG"/>
+                                    <constraint firstAttribute="height" constant="45" id="RU1-34-UF4"/>
+                                </constraints>
+                                <state key="normal" image="Quit Button"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="vZO-F9-SpX" eventType="touchUpInside" id="36F-hh-499"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -737,7 +737,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZo-5v-b6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791.5" y="403.5"/>
+            <point key="canvasLocation" x="1960.5" y="403.5"/>
         </scene>
         <!--Marketplace View Controller-->
         <scene sceneID="bEB-fC-X6v">
@@ -931,7 +931,6 @@
                                 <state key="normal" title="Back" image="Back Button"/>
                                 <connections>
                                     <action selector="backButton:" destination="jcF-Ad-o52" eventType="touchUpInside" id="S4D-dp-wVw"/>
-                                    <segue destination="WKj-cM-742" kind="modal" identifier="returnBack" id="gUM-Fh-Ena"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twc-MH-p2u">
@@ -1067,6 +1066,7 @@
                         <outlet property="imageView" destination="JHV-JW-s2L" id="J3N-xK-TgD"/>
                         <outlet property="pageControl" destination="e3M-AC-fMY" id="7lH-hA-lS7"/>
                         <outlet property="settingButton" destination="J9l-si-ZLL" id="NK9-Tk-TfL"/>
+                        <outlet property="userNameLabel" destination="LF6-Cb-Uct" id="HqX-lI-fxn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiM-eu-O0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1455,6 +1455,6 @@
         <image name="Trash" width="81" height="84"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zUB-R1-gCs"/>
+        <segue reference="v8G-eX-7ta"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         loadingIndicator.startAnimating()
         
         //sign out
-        try! FIRAuth.auth()!.signOut()
-        FBSDKAccessToken.setCurrentAccessToken(nil)
+        //try! FIRAuth.auth()!.signOut()
+        //FBSDKAccessToken.setCurrentAccessToken(nil)
         
         
         super.viewDidLoad()

@@ -179,12 +179,11 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             let destinationVC = segue.destinationViewController as! ItemViewController
             
             
-            
-            destinationVC.imageArray = self.imageArray
-            destinationVC.imageCache = self.imageCache
             destinationVC.image = self.imageArray[indexPath.row]
             
             destinationVC.imageName  = self.imageNameArray[indexPath.row]
+            
+            destinationVC.userName = self.name.text!
         }
     }
     

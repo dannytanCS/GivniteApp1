@@ -142,6 +142,20 @@ class Camera: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
         
     }
     
+    
+    @IBAction func cancelButton(sender: AnyObject) {
+        let profileViewController: UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("profile")
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = kCATransitionMoveIn
+        transition.subtype = kCATransitionFromBottom
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
+        self.presentViewController(profileViewController, animated: false, completion: nil)
+
+    }
+    
+    
+    
     //shows camera
     
     override func viewWillAppear(animated: Bool) {

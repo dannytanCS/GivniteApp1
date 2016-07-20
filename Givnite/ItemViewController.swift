@@ -17,10 +17,7 @@ class ItemViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     
     var image = UIImage()
     
-    var imageArray = [UIImage]()
-    
-    var imageCache = [String:UIImage]()
-    
+        
     var imageName:String?
     
     
@@ -34,6 +31,7 @@ class ItemViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     
     var maxImages: Int = 0
     
+    @IBOutlet weak var userNameLabel: UILabel!
   
     @IBOutlet weak var bookName: UITextField!
     @IBOutlet weak var bookPrice: UITextField!
@@ -49,9 +47,12 @@ class ItemViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     @IBOutlet weak var pageControl: UIPageControl!
 
     
+    var userName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.userNameLabel.text = userName
     
         self.bookDescription.editable = false
         self.bookPrice.userInteractionEnabled = false
@@ -167,7 +168,14 @@ class ItemViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
 
     
     @IBAction func backButton(sender: AnyObject) {
-        self.performSegueWithIdentifier("returnBack", sender: self)
+        let profileViewController: UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("profile")
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = kCATransitionMoveIn
+        transition.subtype = kCATransitionFromBottom
+        view.window!.layer.addAnimation(transition, forKey: kCATransition)
+        self.presentViewController(profileViewController, animated: false, completion: nil)
+
     }
     
     
@@ -190,7 +198,7 @@ class ItemViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
             }
             self.databaseRef.child("user").child(self.user!.uid).child("items").child(self.imageName!).removeValue()
             self.databaseRef.child("marketplace").child(self.imageName!).removeValue()
-            self.imageArray.removeAtIndex(self.imageArray.indexOf(self.imageCache[self.imageName!]!)!)
+         
             let profileViewController: UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("profile")
             self.presentViewController(profileViewController, animated: false, completion: nil)
         }))
@@ -335,18 +343,7 @@ class ItemViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     }
  
  
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "returnBack" {
-            let destinationVC = segue.destinationViewController as! ProfileViewController
-            
-            destinationVC.imageCache = self.imageCache
-            destinationVC.imageArray = self.imageArray
-            
-            self.imageList.removeAll()
-            self.imageNameList.removeAll()
-        }
-    }
-    
+   
     
     
     
