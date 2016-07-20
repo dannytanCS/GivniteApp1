@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11CD0234C10743209B37774E80432383 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850C9B9213390DD4AD84B778FBC96475 /* YokoTextField.swift */; };
+		32AF3B535D5CE7CEC2DD81A9A9CA07D9 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219D4D2D2E4485065C226382E9573B4 /* TextFieldsEffects.swift */; };
+		35B6AED08EF9C393603B466A97266562 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86801676E903D4AFCA8CBAD1D835E3 /* YoshikoTextField.swift */; };
+		431EAA30593C734A9128101DF5462FE3 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8C30DA41687C53031B4BBB1EE75B2 /* MadokaTextField.swift */; };
+		45D4D62B60A1B39F56EB39796871048C /* Pods-Givnite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7CA33714C17FF28D74F26348E09506A /* Pods-Givnite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55DD3C4B9C060AC5DA4CD55DD8A3C6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		6A9F36FE87D83F8F07A91E635659F3BB /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45641FCB07869F1AAA62DD164F3D70D7 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787027B3FC85E13E3DAF1F82B8557654 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CA75A55E3DC6AA1B6E74D5F2E376F /* IsaoTextField.swift */; };
+		854905B5906BDDB873ADF5A5550ACCD1 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8267343ED8DF4668E7DDE89462D260B5 /* TextFieldEffects-dummy.m */; };
+		A003FE9724B58DD971274F8B8D16560C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		AA99AF8A545A237A013D38D43EF7825D /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873C418F5E0D10DE7EAA2899DBAD647 /* KaedeTextField.swift */; };
+		B2DD45838ABD3792A3CF4814383E3E02 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569C68F9A33B6572824DAAF97E35371 /* JiroTextField.swift */; };
+		B5456138E36B87D3B9F93720C7F93699 /* Pods-Givnite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF451A0C90A95FA4351FF66A6CA970E8 /* Pods-Givnite-dummy.m */; };
+		BFEDB4F9E0AB672A9598554723A61F1C /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672A9BA0FA8DF324984DFA853ED06C5 /* MinoruTextField.swift */; };
+		D19499BE4818C028BF766050D7CB007D /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A22E73E2014B44C5BE76334718FB0F5 /* HoshiTextField.swift */; };
+		D8270A33BACF4E535F29A11AA45A67E2 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AFE680D7D54BE3E28FA11E5059D2FC /* AkiraTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90FC8FC912A72D55342A94856208B660 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78ABEBFE675E85E851291010E1044D7B;
+			remoteInfo = TextFieldEffects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10EFF4FD81DDC0B83533FA8061EC20B1 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		14FBA3B99A453472E008FF45DB53B42A /* Pods-Givnite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Givnite.debug.xcconfig"; sourceTree = "<group>"; };
+		205983467C6048989CDDA3854A4576D3 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		22CA73740954261C06ABFEE9F3FA561F /* Pods-Givnite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Givnite-acknowledgements.plist"; sourceTree = "<group>"; };
+		26AFE680D7D54BE3E28FA11E5059D2FC /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		2707CE62AAE01BCAA8D254F8CE2AB9B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A22E73E2014B44C5BE76334718FB0F5 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		3D8EE9C08C7BAA7F39E27A87B0535C55 /* Pods-Givnite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Givnite-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E47FE5493282843209C8E081A6A6869 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		41CA0E80942FFB0F6E519369BB1125EE /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		45641FCB07869F1AAA62DD164F3D70D7 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		49685E31045FBEE27B1F24FD31414966 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		4B9835B8550D74DCC39167875EE5F300 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5569C68F9A33B6572824DAAF97E35371 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		5672A9BA0FA8DF324984DFA853ED06C5 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		5DB99E74203DFAA472C5591766D1DB32 /* Pods-Givnite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Givnite.release.xcconfig"; sourceTree = "<group>"; };
+		6C86801676E903D4AFCA8CBAD1D835E3 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		6D9BA786DD8E9E90082C90C4CDF420E1 /* Pods-Givnite-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Givnite-frameworks.sh"; sourceTree = "<group>"; };
+		6E2D343FDA339808DEC6B3AB88E50448 /* Pods-Givnite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Givnite.modulemap"; sourceTree = "<group>"; };
+		8267343ED8DF4668E7DDE89462D260B5 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		850C9B9213390DD4AD84B778FBC96475 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		9219D4D2D2E4485065C226382E9573B4 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9873C418F5E0D10DE7EAA2899DBAD647 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		9AF04B39030F3450A8D161F18DB1EAA2 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		A3210E97928A522A0A67187CD8845980 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		AA6CA75A55E3DC6AA1B6E74D5F2E376F /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		AD246A26E6E637274770A7BF9917EE6B /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		B0B8C30DA41687C53031B4BBB1EE75B2 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		C0B5C3009B0974431BDD41DCFDCD7EE6 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		C9A7135C81056C3A0A73A4585D1FFB2B /* Pods_Givnite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Givnite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB5D63431F2A852EEEA59D6509B12D7 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF451A0C90A95FA4351FF66A6CA970E8 /* Pods-Givnite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Givnite-dummy.m"; sourceTree = "<group>"; };
+		D6CAE4C4EAB4F1E638FFDD6D95CA37FD /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		DBA3B2ACAD4DA1802B326D87E81C763B /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E54190C248FDA8B35912C40C0F184545 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		E5C5B6C31E14C6C0C916DA54018FB35B /* Pods-Givnite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Givnite-resources.sh"; sourceTree = "<group>"; };
+		E7CA33714C17FF28D74F26348E09506A /* Pods-Givnite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Givnite-umbrella.h"; sourceTree = "<group>"; };
+		F3523C6A64690297947AF4C768237763 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		F377F575373F70FC09EA3A9F10008CFB /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		FC01F0E5486139FA93CED91DD0A37918 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85DAF488A366D81537AA147686AD3B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A003FE9724B58DD971274F8B8D16560C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D87E9137CB664439782C01A5FEC6A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DD3C4B9C060AC5DA4CD55DD8A3C6A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D20A4F9018270D92F223892FB3E3662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49685E31045FBEE27B1F24FD31414966 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CB84AEC563BA6A90B119D283E9C45B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3210E97928A522A0A67187CD8845980 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		401BDA036B92652C18CA18A1FE32E806 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				80E9942B7CBE116948159A3B9D632217 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		43F24116EDCF5405FBCC4E32D5887267 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10EFF4FD81DDC0B83533FA8061EC20B1 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49986E643210E3D35880A894B751D1A2 /* GoogleParsingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9F9E9C9FE2A63BB18623930E00D1BBC8 /* Frameworks */,
+			);
+			path = GoogleParsingUtilities;
+			sourceTree = "<group>";
+		};
+		4A79BAC28119C8D4F9947BDCBAA6B161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41CA0E80942FFB0F6E519369BB1125EE /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BE60835BCC3CC9CC0C761072BACE7F8 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				7B602F814F81943F27298D4D3F97BFB6 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		551FA46EB59FF89DF91E7B08E2EDC99E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				401BDA036B92652C18CA18A1FE32E806 /* Firebase */,
+				4BE60835BCC3CC9CC0C761072BACE7F8 /* FirebaseAnalytics */,
+				FD6148123700695DE22781C8C879748F /* FirebaseAuth */,
+				8385B24FF1417F700D4D6C1FFD93A752 /* FirebaseDatabase */,
+				A00DF9EE8F89E7A0D1437C9B5B0C98BC /* FirebaseInstanceID */,
+				7B178C540C66CA4BFB8F57441EE92E89 /* FirebaseStorage */,
+				E6452F470AD2F1577D6A4DEA932D7FCB /* GoogleInterchangeUtilities */,
+				EF82A741115F278795FE63DF8ECF999A /* GoogleNetworkingUtilities */,
+				49986E643210E3D35880A894B751D1A2 /* GoogleParsingUtilities */,
+				938CC70851F26D4A522FAFD4DC98F8C9 /* GoogleSymbolUtilities */,
+				5B4477F158E95F0CFC564C9797192BB4 /* GoogleUtilities */,
+				9EF27778BB3E522EA7F9C9E73E58FEED /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B4477F158E95F0CFC564C9797192BB4 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				43F24116EDCF5405FBCC4E32D5887267 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		7B178C540C66CA4BFB8F57441EE92E89 /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				AA9EA4B2A2201982BD950E29D968F397 /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		7B602F814F81943F27298D4D3F97BFB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0B5C3009B0974431BDD41DCFDCD7EE6 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				551FA46EB59FF89DF91E7B08E2EDC99E /* Pods */,
+				B140A4F78E438ADEDC4BDF2CB56A2F87 /* Products */,
+				83BFF93C34A1DAB349C82D345F622072 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80E9942B7CBE116948159A3B9D632217 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				F3523C6A64690297947AF4C768237763 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		8385B24FF1417F700D4D6C1FFD93A752 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				3CB84AEC563BA6A90B119D283E9C45B5 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		83BFF93C34A1DAB349C82D345F622072 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8522E16396EAEFA422EDEDD782FCBBAB /* Pods-Givnite */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8522E16396EAEFA422EDEDD782FCBBAB /* Pods-Givnite */ = {
+			isa = PBXGroup;
+			children = (
+				2707CE62AAE01BCAA8D254F8CE2AB9B3 /* Info.plist */,
+				6E2D343FDA339808DEC6B3AB88E50448 /* Pods-Givnite.modulemap */,
+				3D8EE9C08C7BAA7F39E27A87B0535C55 /* Pods-Givnite-acknowledgements.markdown */,
+				22CA73740954261C06ABFEE9F3FA561F /* Pods-Givnite-acknowledgements.plist */,
+				CF451A0C90A95FA4351FF66A6CA970E8 /* Pods-Givnite-dummy.m */,
+				6D9BA786DD8E9E90082C90C4CDF420E1 /* Pods-Givnite-frameworks.sh */,
+				E5C5B6C31E14C6C0C916DA54018FB35B /* Pods-Givnite-resources.sh */,
+				E7CA33714C17FF28D74F26348E09506A /* Pods-Givnite-umbrella.h */,
+				14FBA3B99A453472E008FF45DB53B42A /* Pods-Givnite.debug.xcconfig */,
+				5DB99E74203DFAA472C5591766D1DB32 /* Pods-Givnite.release.xcconfig */,
+			);
+			name = "Pods-Givnite";
+			path = "Target Support Files/Pods-Givnite";
+			sourceTree = "<group>";
+		};
+		889A03C06074A2A1D18C805223E92241 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E47FE5493282843209C8E081A6A6869 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C537A5C0CA5A01454AFCCFBD0FE0396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC01F0E5486139FA93CED91DD0A37918 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		938CC70851F26D4A522FAFD4DC98F8C9 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				889A03C06074A2A1D18C805223E92241 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		9EF27778BB3E522EA7F9C9E73E58FEED /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				26AFE680D7D54BE3E28FA11E5059D2FC /* AkiraTextField.swift */,
+				2A22E73E2014B44C5BE76334718FB0F5 /* HoshiTextField.swift */,
+				AA6CA75A55E3DC6AA1B6E74D5F2E376F /* IsaoTextField.swift */,
+				5569C68F9A33B6572824DAAF97E35371 /* JiroTextField.swift */,
+				9873C418F5E0D10DE7EAA2899DBAD647 /* KaedeTextField.swift */,
+				B0B8C30DA41687C53031B4BBB1EE75B2 /* MadokaTextField.swift */,
+				5672A9BA0FA8DF324984DFA853ED06C5 /* MinoruTextField.swift */,
+				9219D4D2D2E4485065C226382E9573B4 /* TextFieldsEffects.swift */,
+				850C9B9213390DD4AD84B778FBC96475 /* YokoTextField.swift */,
+				6C86801676E903D4AFCA8CBAD1D835E3 /* YoshikoTextField.swift */,
+				B87D3AC3D97EDCDBE37C98DC7C7627E3 /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		9F9E9C9FE2A63BB18623930E00D1BBC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E54190C248FDA8B35912C40C0F184545 /* GoogleParsingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A00DF9EE8F89E7A0D1437C9B5B0C98BC /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				AD246A26E6E637274770A7BF9917EE6B /* FIRInstanceID.h */,
+				8C537A5C0CA5A01454AFCCFBD0FE0396 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		AA9EA4B2A2201982BD950E29D968F397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AF04B39030F3450A8D161F18DB1EAA2 /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B140A4F78E438ADEDC4BDF2CB56A2F87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7135C81056C3A0A73A4585D1FFB2B /* Pods_Givnite.framework */,
+				CBB5D63431F2A852EEEA59D6509B12D7 /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B87D3AC3D97EDCDBE37C98DC7C7627E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B9835B8550D74DCC39167875EE5F300 /* Info.plist */,
+				205983467C6048989CDDA3854A4576D3 /* TextFieldEffects.modulemap */,
+				F377F575373F70FC09EA3A9F10008CFB /* TextFieldEffects.xcconfig */,
+				8267343ED8DF4668E7DDE89462D260B5 /* TextFieldEffects-dummy.m */,
+				D6CAE4C4EAB4F1E638FFDD6D95CA37FD /* TextFieldEffects-prefix.pch */,
+				45641FCB07869F1AAA62DD164F3D70D7 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6452F470AD2F1577D6A4DEA932D7FCB /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F66E47BB5625A3AE30066FD61BE4288F /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		EF82A741115F278795FE63DF8ECF999A /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A79BAC28119C8D4F9947BDCBAA6B161 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		F66E47BB5625A3AE30066FD61BE4288F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA3B2ACAD4DA1802B326D87E81C763B /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD6148123700695DE22781C8C879748F /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				2D20A4F9018270D92F223892FB3E3662 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30188DB5EE6503405025A30EE4C2384D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D4D62B60A1B39F56EB39796871048C /* Pods-Givnite-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B48F2065B4A065D52B746F1C290EFA71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9F36FE87D83F8F07A91E635659F3BB /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		78ABEBFE675E85E851291010E1044D7B /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB6D799977396636ABDB78A0D02CFE7 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				738462DB0C1BD1D154E7AC68A2FAD432 /* Sources */,
+				97D87E9137CB664439782C01A5FEC6A3 /* Frameworks */,
+				B48F2065B4A065D52B746F1C290EFA71 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = CBB5D63431F2A852EEEA59D6509B12D7 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D31F968B6EC20344B7B0D322994CAE26 /* Pods-Givnite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED9A143E70E453A995CC93E8089B8D1 /* Build configuration list for PBXNativeTarget "Pods-Givnite" */;
+			buildPhases = (
+				4E7BD262AA57843B7450AA2E7A3D1275 /* Sources */,
+				85DAF488A366D81537AA147686AD3B65 /* Frameworks */,
+				30188DB5EE6503405025A30EE4C2384D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2F19B5289D44488EA17D97724B7780F /* PBXTargetDependency */,
+			);
+			name = "Pods-Givnite";
+			productName = "Pods-Givnite";
+			productReference = C9A7135C81056C3A0A73A4585D1FFB2B /* Pods_Givnite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B140A4F78E438ADEDC4BDF2CB56A2F87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D31F968B6EC20344B7B0D322994CAE26 /* Pods-Givnite */,
+				78ABEBFE675E85E851291010E1044D7B /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E7BD262AA57843B7450AA2E7A3D1275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5456138E36B87D3B9F93720C7F93699 /* Pods-Givnite-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		738462DB0C1BD1D154E7AC68A2FAD432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8270A33BACF4E535F29A11AA45A67E2 /* AkiraTextField.swift in Sources */,
+				D19499BE4818C028BF766050D7CB007D /* HoshiTextField.swift in Sources */,
+				787027B3FC85E13E3DAF1F82B8557654 /* IsaoTextField.swift in Sources */,
+				B2DD45838ABD3792A3CF4814383E3E02 /* JiroTextField.swift in Sources */,
+				AA99AF8A545A237A013D38D43EF7825D /* KaedeTextField.swift in Sources */,
+				431EAA30593C734A9128101DF5462FE3 /* MadokaTextField.swift in Sources */,
+				BFEDB4F9E0AB672A9598554723A61F1C /* MinoruTextField.swift in Sources */,
+				854905B5906BDDB873ADF5A5550ACCD1 /* TextFieldEffects-dummy.m in Sources */,
+				32AF3B535D5CE7CEC2DD81A9A9CA07D9 /* TextFieldsEffects.swift in Sources */,
+				11CD0234C10743209B37774E80432383 /* YokoTextField.swift in Sources */,
+				35B6AED08EF9C393603B466A97266562 /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2F19B5289D44488EA17D97724B7780F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 78ABEBFE675E85E851291010E1044D7B /* TextFieldEffects */;
+			targetProxy = 90FC8FC912A72D55342A94856208B660 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		388828464DBCE5364A987E7EA3408BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F377F575373F70FC09EA3A9F10008CFB /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C3963097E67AEBB54087233C43E42528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB99E74203DFAA472C5591766D1DB32 /* Pods-Givnite.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Givnite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Givnite/Pods-Givnite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Givnite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CEADD77E28E7C3DDDCD6D69712A2C746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F377F575373F70FC09EA3A9F10008CFB /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF176E88B138D41FFBE3551807D0D79A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FBA3B99A453472E008FF45DB53B42A /* Pods-Givnite.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Givnite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Givnite/Pods-Givnite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Givnite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED9A143E70E453A995CC93E8089B8D1 /* Build configuration list for PBXNativeTarget "Pods-Givnite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF176E88B138D41FFBE3551807D0D79A /* Debug */,
+				C3963097E67AEBB54087233C43E42528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB6D799977396636ABDB78A0D02CFE7 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388828464DBCE5364A987E7EA3408BD4 /* Debug */,
+				CEADD77E28E7C3DDDCD6D69712A2C746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

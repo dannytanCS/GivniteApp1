@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E3585801D3163E200CDBB76 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35857F1D3163E200CDBB76 /* ItemViewController.swift */; };
+		7E3585821D31645000CDBB76 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3585811D31645000CDBB76 /* CollectionViewCell.swift */; };
+		7E42DF791D3A8B250074E8BC /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42DF781D3A8B250074E8BC /* MarketplaceViewController.swift */; };
+		7E64DFB01D3AA4920087A700 /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E64DFAF1D3AA4920087A700 /* MarketCollectionViewCell.swift */; };
+		7E96C27A1D2EBEB80038D341 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E96C2771D2EBEB80038D341 /* FBSDKCoreKit.framework */; };
+		7E96C27B1D2EBEB80038D341 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E96C2781D2EBEB80038D341 /* FBSDKLoginKit.framework */; };
+		7E96C27C1D2EBEB80038D341 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E96C2791D2EBEB80038D341 /* FBSDKShareKit.framework */; };
+		7EA0A9221D300A0100CD895E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA0A9211D300A0100CD895E /* Main.storyboard */; };
+		7EA150341D31AAC200B5E639 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA150331D31AAC200B5E639 /* DescriptionViewController.swift */; };
+		7EA8501A1D2ED94E00E05190 /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA850191D2ED94E00E05190 /* SchoolViewController.swift */; };
+		7ED2A7421D3BE42600478551 /* MarketItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED2A7411D3BE42600478551 /* MarketItemViewController.swift */; };
+		7EE6232C1D2EC1A900B6DA60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EE6232B1D2EC1A900B6DA60 /* GoogleService-Info.plist */; };
+		7EF976CC1D304178000E22F8 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF976CB1D304178000E22F8 /* Camera.swift */; };
+		7EFF08E31D3EB964000C0E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF08E21D3EB964000C0E4D /* ViewController.swift */; };
+		B195C7340EF3FCD7EDFB24EC /* Pods_Givnite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E1D8C7000DBD506DD9075 /* Pods_Givnite.framework */; };
+		C44D0E311D277FDC00C8EC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D0E301D277FDC00C8EC92 /* AppDelegate.swift */; };
+		C44D0E331D277FDC00C8EC92 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D0E321D277FDC00C8EC92 /* LoginViewController.swift */; };
+		C44D0E381D277FDC00C8EC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44D0E371D277FDC00C8EC92 /* Assets.xcassets */; };
+		C44D0E3B1D277FDC00C8EC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44D0E391D277FDC00C8EC92 /* LaunchScreen.storyboard */; };
+		C45C8F971D29ACC100EBD978 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C8F961D29ACC100EBD978 /* ProfileViewController.swift */; };
+		C4A50D481D2813F20044C65F /* TextFieldEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A50D471D2813F20044C65F /* TextFieldEffect.swift */; };
+		C4C5BD151D3883F9009679BA /* RSKPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5BD141D3883F9009679BA /* RSKPlaceholderTextView.swift */; };
+		C4F0FD871D2809BD00DD434B /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F0FD861D2809BD00DD434B /* ZFRippleButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E35857F1D3163E200CDBB76 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		7E3585811D31645000CDBB76 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		7E42DF781D3A8B250074E8BC /* MarketplaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
+		7E64DFAF1D3AA4920087A700 /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
+		7E96C2771D2EBEB80038D341 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7E96C2781D2EBEB80038D341 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7E96C2791D2EBEB80038D341 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7EA0A9211D300A0100CD895E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7EA150331D31AAC200B5E639 /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		7EA850191D2ED94E00E05190 /* SchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
+		7ED2A7411D3BE42600478551 /* MarketItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketItemViewController.swift; sourceTree = "<group>"; };
+		7EE6232B1D2EC1A900B6DA60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7EF976CB1D304178000E22F8 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		7EFF08E21D3EB964000C0E4D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A55E1D8C7000DBD506DD9075 /* Pods_Givnite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Givnite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26960B2EF16F1DAE1DB1B7F /* Pods-Givnite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Givnite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Givnite/Pods-Givnite.release.xcconfig"; sourceTree = "<group>"; };
+		C44D0E2D1D277FDC00C8EC92 /* Givnite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Givnite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44D0E301D277FDC00C8EC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C44D0E321D277FDC00C8EC92 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C44D0E371D277FDC00C8EC92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C44D0E3A1D277FDC00C8EC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C44D0E3C1D277FDC00C8EC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45C8F961D29ACC100EBD978 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C4A50D471D2813F20044C65F /* TextFieldEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffect.swift; sourceTree = "<group>"; };
+		C4C5BD141D3883F9009679BA /* RSKPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSKPlaceholderTextView.swift; sourceTree = "<group>"; };
+		C4F0FD861D2809BD00DD434B /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
+		EEA23667B520946900763668 /* Pods-Givnite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Givnite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Givnite/Pods-Givnite.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C44D0E2A1D277FDC00C8EC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E96C27C1D2EBEB80038D341 /* FBSDKShareKit.framework in Frameworks */,
+				B195C7340EF3FCD7EDFB24EC /* Pods_Givnite.framework in Frameworks */,
+				7E96C27A1D2EBEB80038D341 /* FBSDKCoreKit.framework in Frameworks */,
+				7E96C27B1D2EBEB80038D341 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4133C4B5971C75C8E15A1624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E96C2771D2EBEB80038D341 /* FBSDKCoreKit.framework */,
+				7E96C2781D2EBEB80038D341 /* FBSDKLoginKit.framework */,
+				7E96C2791D2EBEB80038D341 /* FBSDKShareKit.framework */,
+				A55E1D8C7000DBD506DD9075 /* Pods_Givnite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68FC852D351B577E91070A15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEA23667B520946900763668 /* Pods-Givnite.debug.xcconfig */,
+				C26960B2EF16F1DAE1DB1B7F /* Pods-Givnite.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C44D0E241D277FDC00C8EC92 = {
+			isa = PBXGroup;
+			children = (
+				C44D0E2F1D277FDC00C8EC92 /* Givnite */,
+				C44D0E2E1D277FDC00C8EC92 /* Products */,
+				68FC852D351B577E91070A15 /* Pods */,
+				4133C4B5971C75C8E15A1624 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C44D0E2E1D277FDC00C8EC92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C44D0E2D1D277FDC00C8EC92 /* Givnite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C44D0E2F1D277FDC00C8EC92 /* Givnite */ = {
+			isa = PBXGroup;
+			children = (
+				C44D0E301D277FDC00C8EC92 /* AppDelegate.swift */,
+				7EFF08E21D3EB964000C0E4D /* ViewController.swift */,
+				C44D0E321D277FDC00C8EC92 /* LoginViewController.swift */,
+				7EA850191D2ED94E00E05190 /* SchoolViewController.swift */,
+				C45C8F961D29ACC100EBD978 /* ProfileViewController.swift */,
+				7E3585811D31645000CDBB76 /* CollectionViewCell.swift */,
+				7EF976CB1D304178000E22F8 /* Camera.swift */,
+				7E35857F1D3163E200CDBB76 /* ItemViewController.swift */,
+				7EA150331D31AAC200B5E639 /* DescriptionViewController.swift */,
+				7E42DF781D3A8B250074E8BC /* MarketplaceViewController.swift */,
+				7E64DFAF1D3AA4920087A700 /* MarketCollectionViewCell.swift */,
+				7ED2A7411D3BE42600478551 /* MarketItemViewController.swift */,
+				7EA0A9211D300A0100CD895E /* Main.storyboard */,
+				C44D0E371D277FDC00C8EC92 /* Assets.xcassets */,
+				C44D0E391D277FDC00C8EC92 /* LaunchScreen.storyboard */,
+				C44D0E3C1D277FDC00C8EC92 /* Info.plist */,
+				7EE6232B1D2EC1A900B6DA60 /* GoogleService-Info.plist */,
+				C4F0FD861D2809BD00DD434B /* ZFRippleButton.swift */,
+				C4A50D471D2813F20044C65F /* TextFieldEffect.swift */,
+				C4C5BD141D3883F9009679BA /* RSKPlaceholderTextView.swift */,
+			);
+			path = Givnite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C44D0E2C1D277FDC00C8EC92 /* Givnite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44D0E3F1D277FDC00C8EC92 /* Build configuration list for PBXNativeTarget "Givnite" */;
+			buildPhases = (
+				9D8B4458AA1D7025AF085BD8 /* [CP] Check Pods Manifest.lock */,
+				C44D0E291D277FDC00C8EC92 /* Sources */,
+				C44D0E2A1D277FDC00C8EC92 /* Frameworks */,
+				C44D0E2B1D277FDC00C8EC92 /* Resources */,
+				5B18CB17B5820353393B8C2D /* [CP] Embed Pods Frameworks */,
+				9C44FE0DC06C3517597D9531 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Givnite;
+			productName = Givnite;
+			productReference = C44D0E2D1D277FDC00C8EC92 /* Givnite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C44D0E251D277FDC00C8EC92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Givnite;
+				TargetAttributes = {
+					C44D0E2C1D277FDC00C8EC92 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C44D0E281D277FDC00C8EC92 /* Build configuration list for PBXProject "Givnite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C44D0E241D277FDC00C8EC92;
+			productRefGroup = C44D0E2E1D277FDC00C8EC92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C44D0E2C1D277FDC00C8EC92 /* Givnite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C44D0E2B1D277FDC00C8EC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44D0E3B1D277FDC00C8EC92 /* LaunchScreen.storyboard in Resources */,
+				7EE6232C1D2EC1A900B6DA60 /* GoogleService-Info.plist in Resources */,
+				C44D0E381D277FDC00C8EC92 /* Assets.xcassets in Resources */,
+				7EA0A9221D300A0100CD895E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B18CB17B5820353393B8C2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Givnite/Pods-Givnite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C44FE0DC06C3517597D9531 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Givnite/Pods-Givnite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8B4458AA1D7025AF085BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C44D0E291D277FDC00C8EC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFF08E31D3EB964000C0E4D /* ViewController.swift in Sources */,
+				C44D0E331D277FDC00C8EC92 /* LoginViewController.swift in Sources */,
+				7E3585801D3163E200CDBB76 /* ItemViewController.swift in Sources */,
+				7E42DF791D3A8B250074E8BC /* MarketplaceViewController.swift in Sources */,
+				7E3585821D31645000CDBB76 /* CollectionViewCell.swift in Sources */,
+				C4C5BD151D3883F9009679BA /* RSKPlaceholderTextView.swift in Sources */,
+				7E64DFB01D3AA4920087A700 /* MarketCollectionViewCell.swift in Sources */,
+				7EA150341D31AAC200B5E639 /* DescriptionViewController.swift in Sources */,
+				C4A50D481D2813F20044C65F /* TextFieldEffect.swift in Sources */,
+				7EA8501A1D2ED94E00E05190 /* SchoolViewController.swift in Sources */,
+				C45C8F971D29ACC100EBD978 /* ProfileViewController.swift in Sources */,
+				C44D0E311D277FDC00C8EC92 /* AppDelegate.swift in Sources */,
+				7EF976CC1D304178000E22F8 /* Camera.swift in Sources */,
+				C4F0FD871D2809BD00DD434B /* ZFRippleButton.swift in Sources */,
+				7ED2A7421D3BE42600478551 /* MarketItemViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C44D0E391D277FDC00C8EC92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C44D0E3A1D277FDC00C8EC92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C44D0E3D1D277FDC00C8EC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C44D0E3E1D277FDC00C8EC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C44D0E401D277FDC00C8EC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA23667B520946900763668 /* Pods-Givnite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Givnite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.givnite.Givnite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C44D0E411D277FDC00C8EC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C26960B2EF16F1DAE1DB1B7F /* Pods-Givnite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Givnite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.givnite.Givnite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C44D0E281D277FDC00C8EC92 /* Build configuration list for PBXProject "Givnite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44D0E3D1D277FDC00C8EC92 /* Debug */,
+				C44D0E3E1D277FDC00C8EC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C44D0E3F1D277FDC00C8EC92 /* Build configuration list for PBXNativeTarget "Givnite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44D0E401D277FDC00C8EC92 /* Debug */,
+				C44D0E411D277FDC00C8EC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C44D0E251D277FDC00C8EC92 /* Project object */;
+}

@@ -1,0 +1,60 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/dannytan/Desktop/Givnite_App/build/Debug-iphonesimulator/Pods_Givnite.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Givnite-umbrella.h",
+          'external-contents': "/Users/dannytan/Desktop/Givnite_App/Pods/Target Support Files/Pods-Givnite/Pods-Givnite-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Givnite-Swift.h",
+          'external-contents': "/Users/dannytan/Desktop/Givnite_App/build/Debug-iphonesimulator/Pods_Givnite.framework/Headers/Pods_Givnite-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/dannytan/Desktop/Givnite_App/build/Debug-iphonesimulator/Pods_Givnite.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/dannytan/Desktop/Givnite_App/build/Pods.build/Debug-iphonesimulator/Pods-Givnite.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/dannytan/Desktop/Givnite_App/build/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TextFieldEffects-Swift.h",
+          'external-contents': "/Users/dannytan/Desktop/Givnite_App/build/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TextFieldEffects-umbrella.h",
+          'external-contents': "/Users/dannytan/Desktop/Givnite_App/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/dannytan/Desktop/Givnite_App/build/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/dannytan/Desktop/Givnite_App/build/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

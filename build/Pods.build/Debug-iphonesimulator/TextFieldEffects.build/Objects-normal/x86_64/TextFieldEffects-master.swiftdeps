@@ -1,0 +1,14 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "6c45c65e91f1458386bd454184055b72"
+build_time: [520805478, 361121000]
+inputs:
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": !dirty [520803769, 0]
+  "/Users/dannytan/Desktop/Givnite_App/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": !dirty [520803769, 0]
