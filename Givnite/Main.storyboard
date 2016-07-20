@@ -130,13 +130,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-4h-yQd" customClass="ZFRippleButton" customModule="Givnite" customModuleProvider="target">
+                                <rect key="frame" x="30" y="598" width="315" height="49"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="BKT-ZL-NhX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <state key="normal" title="Beta School">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonCornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="r0Y-cm-aOR" kind="modal" id="N3j-5W-8Sr"/>
+                                </connections>
+                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51P-Y3-OaY" customClass="ZFRippleButton" customModule="Givnite" customModuleProvider="target">
                                 <rect key="frame" x="30" y="598" width="315" height="49"/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="jC1-os-dRK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -146,7 +168,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="r0Y-cm-aOR" kind="modal" id="Mgg-ae-R6I"/>
+                                    <segue destination="r0Y-cm-aOR" kind="modal" id="uyg-or-FLl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Select Your School!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzK-Y5-PSu">
@@ -261,8 +283,11 @@
                             <constraint firstItem="hfi-IW-TTd" firstAttribute="centerX" secondItem="619-Bg-sLa" secondAttribute="centerX" id="V8j-xc-9lm"/>
                             <constraint firstItem="v1w-pm-xiK" firstAttribute="top" secondItem="UHm-Z8-1HV" secondAttribute="bottom" constant="8" id="VhU-pw-6GW"/>
                             <constraint firstItem="eFj-HQ-Od3" firstAttribute="centerX" secondItem="619-Bg-sLa" secondAttribute="centerX" id="Xrg-2G-d5v"/>
+                            <constraint firstItem="Spv-qw-ppc" firstAttribute="top" secondItem="cnf-4h-yQd" secondAttribute="bottom" constant="20" id="ZNm-e3-dxl"/>
+                            <constraint firstItem="cnf-4h-yQd" firstAttribute="leading" secondItem="619-Bg-sLa" secondAttribute="leadingMargin" constant="10" id="Zvv-cD-81o"/>
                             <constraint firstItem="Spv-qw-ppc" firstAttribute="top" secondItem="51P-Y3-OaY" secondAttribute="bottom" constant="20" id="e2P-oZ-DPB"/>
                             <constraint firstItem="VJ5-T2-IvC" firstAttribute="centerX" secondItem="619-Bg-sLa" secondAttribute="centerX" id="fbR-BH-oVY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnf-4h-yQd" secondAttribute="trailing" constant="10" id="iYQ-oi-6VW"/>
                             <constraint firstItem="51P-Y3-OaY" firstAttribute="leading" secondItem="619-Bg-sLa" secondAttribute="leadingMargin" constant="10" id="q3x-Zd-2by"/>
                             <constraint firstItem="tHZ-Jg-dQL" firstAttribute="top" secondItem="YKn-re-thd" secondAttribute="bottom" constant="8" id="ssc-Li-rnU"/>
                             <constraint firstItem="c7o-pL-M4Y" firstAttribute="top" secondItem="pzK-Y5-PSu" secondAttribute="bottom" constant="24" id="wVJ-C3-3V2"/>
@@ -296,7 +321,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Congratulation, you almost made it! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8k-gx-PGR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Congratulation, you've almost made it" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8k-gx-PGR">
                                 <rect key="frame" x="16" y="38" width="343" height="25"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1455,6 +1480,7 @@
         <image name="Trash" width="81" height="84"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v8G-eX-7ta"/>
+        <segue reference="c3O-RV-yIY"/>
+        <segue reference="uyg-or-FLl"/>
     </inferredMetricsTieBreakers>
 </document>
