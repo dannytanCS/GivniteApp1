@@ -379,13 +379,18 @@ class MarketplaceViewController: UIViewController, UICollectionViewDelegate, UIC
             self.userID = self.userArray[indexPath.row]
             if let string = self.userArray[indexPath.row] as? String {
                
-                self.performSegueWithIdentifier("showProfile", sender: self)
+                
+                dispatch_async(dispatch_get_main_queue(), { 
+                    self.performSegueWithIdentifier("showProfile", sender: self)
+                })
 
             }
         }
     }
     
     var userID: String?
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
        
@@ -416,17 +421,15 @@ class MarketplaceViewController: UIViewController, UICollectionViewDelegate, UIC
             
         }
         
-    if segue.identifier == "showProfile" && userID != nil {
+        if segue.identifier == "showProfile" {
+            let destinationVC = segue.destinationViewController as! ProfileViewController
         
-        let destinationVC = segue.destinationViewController as! ProfileViewController
+            destinationVC.userID = self.userID
         
-       // destinationVC.userID = self.userID
-       
-      
-        //changes the profile to the user
-        
+            destinationVC.firstTimeUse = false
         }
+    
     }
-
+    
         
 }

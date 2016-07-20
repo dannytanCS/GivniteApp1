@@ -20,5 +20,4 @@ class MarketCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var bookPrice: UILabel!
     
-    
 }

@@ -457,7 +457,7 @@
                                 <rect key="frame" x="10" y="191" width="362" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bob" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mu-uk-JDA">
                                 <rect key="frame" x="20" y="25" width="335" height="21"/>
@@ -609,6 +609,10 @@
                                     <constraint firstItem="Uzb-kf-ZUU" firstAttribute="top" secondItem="1yR-Sh-TJc" secondAttribute="bottom" constant="29" id="ykw-lD-vaX"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vX9-Cz-7Fl" userLabel="SecondView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -620,9 +624,11 @@
                             <constraint firstItem="ufM-hV-GjE" firstAttribute="leading" secondItem="eeh-LI-Si2" secondAttribute="leadingMargin" constant="-10" id="EM2-K6-1sj"/>
                             <constraint firstItem="8mu-uk-JDA" firstAttribute="trailing" secondItem="eeh-LI-Si2" secondAttribute="trailingMargin" id="Fyg-qF-EQG"/>
                             <constraint firstItem="RVe-zb-xot" firstAttribute="top" secondItem="ufM-hV-GjE" secondAttribute="bottom" constant="9" id="G4p-Hf-cAT"/>
+                            <constraint firstItem="vX9-Cz-7Fl" firstAttribute="bottom" secondItem="ZAK-qB-4E7" secondAttribute="bottom" id="G7J-KZ-ZnV"/>
                             <constraint firstItem="CJ6-eL-mV5" firstAttribute="leading" secondItem="eeh-LI-Si2" secondAttribute="leadingMargin" constant="-20" id="HiR-9z-MBy"/>
                             <constraint firstItem="G9V-6z-v8R" firstAttribute="centerX" secondItem="eeh-LI-Si2" secondAttribute="centerX" id="Hpz-Nh-ENY"/>
                             <constraint firstItem="a2o-X1-jCK" firstAttribute="top" secondItem="G9V-6z-v8R" secondAttribute="bottom" constant="8" id="JIO-9S-rBQ"/>
+                            <constraint firstItem="vX9-Cz-7Fl" firstAttribute="trailing" secondItem="ZAK-qB-4E7" secondAttribute="trailing" id="JJa-rM-cRz"/>
                             <constraint firstItem="8mu-uk-JDA" firstAttribute="top" secondItem="wo5-Jj-kvv" secondAttribute="bottom" constant="5" id="JWm-di-2re"/>
                             <constraint firstItem="ZAK-qB-4E7" firstAttribute="top" secondItem="h81-oV-y1T" secondAttribute="top" id="M4Z-oA-IJU"/>
                             <constraint firstItem="0Uo-qj-7h4" firstAttribute="top" secondItem="wo5-Jj-kvv" secondAttribute="bottom" constant="3" id="SCD-41-nWz"/>
@@ -630,10 +636,12 @@
                             <constraint firstItem="ZAK-qB-4E7" firstAttribute="leading" secondItem="eeh-LI-Si2" secondAttribute="leadingMargin" constant="-20" id="TAZ-SC-eHI"/>
                             <constraint firstItem="8mu-uk-JDA" firstAttribute="leading" secondItem="eeh-LI-Si2" secondAttribute="leadingMargin" id="UY8-55-Cg4"/>
                             <constraint firstItem="ZAK-qB-4E7" firstAttribute="top" secondItem="RVe-zb-xot" secondAttribute="bottom" id="UnV-Rg-jjp"/>
+                            <constraint firstItem="vX9-Cz-7Fl" firstAttribute="leading" secondItem="ZAK-qB-4E7" secondAttribute="leading" id="XJA-2a-cid"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RVe-zb-xot" secondAttribute="trailing" constant="-20" id="aMT-3C-uAH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Uo-qj-7h4" secondAttribute="trailing" constant="-12" id="ekB-VY-rNu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h81-oV-y1T" secondAttribute="trailing" constant="-20" id="kLS-3e-5aL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZAK-qB-4E7" secondAttribute="trailing" constant="-20" id="khJ-LR-lEX"/>
+                            <constraint firstItem="vX9-Cz-7Fl" firstAttribute="top" secondItem="eeh-LI-Si2" secondAttribute="top" id="nsa-zU-OXA"/>
                             <constraint firstItem="ufM-hV-GjE" firstAttribute="top" secondItem="CJ6-eL-mV5" secondAttribute="bottom" constant="10" id="qhT-dt-u4q"/>
                             <constraint firstItem="h81-oV-y1T" firstAttribute="leading" secondItem="eeh-LI-Si2" secondAttribute="leadingMargin" constant="-20" id="syM-7I-Mq6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ufM-hV-GjE" secondAttribute="trailing" constant="-17" id="tUg-lZ-RFV"/>
@@ -653,6 +661,7 @@
                         <outlet property="name" destination="8mu-uk-JDA" id="vde-n3-VdH"/>
                         <outlet property="profilePicture" destination="eTL-Kz-Lda" id="UAY-Jz-ykb"/>
                         <outlet property="schoolNameLabel" destination="vPE-Q3-5XA" id="ddD-Dp-da6"/>
+                        <outlet property="secondView" destination="vX9-Cz-7Fl" id="wHi-VP-00N"/>
                         <segue destination="jcF-Ad-o52" kind="modal" identifier="showImage" id="5UY-9r-GII"/>
                     </connections>
                 </viewController>
@@ -806,7 +815,6 @@
                                                             <rect key="frame" x="8" y="8" width="30" height="30"/>
                                                             <connections>
                                                                 <action selector="buttonClicked:" destination="sEY-U2-bM3" eventType="touchUpInside" id="ukf-dv-fa5"/>
-                                                                <segue destination="WKj-cM-742" kind="modal" identifier="showProfile" id="v8G-eX-7ta"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -861,6 +869,7 @@
                         <outlet property="collectionView" destination="jiq-Ob-Tbp" id="Ad4-Xl-Fv7"/>
                         <outlet property="searchBarText" destination="9Xl-1B-9dB" id="F4F-hB-Tmm"/>
                         <segue destination="Tnf-I5-fWN" kind="modal" identifier="marketEnlarge" id="YfD-1C-9gm"/>
+                        <segue destination="WKj-cM-742" kind="modal" identifier="showProfile" id="VtU-44-gMG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z97-nz-WR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1455,6 +1464,6 @@
         <image name="Trash" width="81" height="84"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v8G-eX-7ta"/>
+        <segue reference="VtU-44-gMG"/>
     </inferredMetricsTieBreakers>
 </document>

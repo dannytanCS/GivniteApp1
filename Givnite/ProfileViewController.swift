@@ -15,7 +15,7 @@ import FirebaseStorage
 import FirebaseDatabase
 
 
-class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProfileViewController: UIViewController, UITextViewDelegate,UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -36,6 +36,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var bioTextView: UITextView!
     
     let storageRef = FIRStorage.storage().referenceForURL("gs://givniteapp.appspot.com")
+
     let dataRef = FIRDatabase.database().referenceFromURL("https://givniteapp.firebaseio.com/")
     let user = FIRAuth.auth()!.currentUser
 
@@ -46,28 +47,64 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     var userID: String?
     
+    var firstTimeUse: Bool = true
+    
     
     let screenSize = UIScreen.mainScreen().bounds
 
+    @IBOutlet weak var secondView: UIView!
+    
     override func viewDidLoad() {
+        
+        
+        if firstTimeUse {
+            userID = self.user?.uid
+            storesInfoFromFB()
+        }
+        
     
         super.viewDidLoad()
+        self.view.sendSubviewToBack(secondView)
         self.view.bringSubviewToFront(name)
         self.view.bringSubviewToFront(addButton)
+        self.view.bringSubviewToFront(changeBioButton)
+        self.view.bringSubviewToFront(doneButton)
+        self.bioTextView.delegate = self
+        secondView.hidden = true
         self.profilePicture.layer.cornerRadius = self.profilePicture.frame.size.width/2
         self.profilePicture.clipsToBounds = true
         self.profilePicture.layer.borderWidth = 2
         self.profilePicture.layer.borderColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1.0).CGColor
+    
+        
         loadImages()
+        getProfileImage()
         schoolInfo()
+        
+        
         self.bioTextView.editable = false
         self.doneButton.hidden = true
+        
+        
+        
+    
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        secondView.addGestureRecognizer(tap)
+        
         
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "swiped:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
         
     }
+    
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     
     //layout for cell size
 
@@ -81,7 +118,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     //loads images from cache or firebase
     
     func loadImages() {
-        dataRef.child("user").child("\(user!.uid)").observeSingleEventOfType(.Value, withBlock: { (snapshot)
+        dataRef.child("user").child(userID!).observeSingleEventOfType(.Value, withBlock: { (snapshot)
             in
             
         
@@ -119,6 +156,22 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.imageNameArray.count
     }
+    
+    //hides keyboard when return is pressed for text view
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            changeBioButton.hidden = false
+            doneButton.hidden = true
+            self.bioTextView.editable = false
+            self.dataRef.child("user").child(userID!).child("bio").setValue(bioTextView.text)
+            self.secondView.hidden = true
+            return false
+        }
+        return true
+    }
+
     
     
     var imageCache = [String:UIImage] ()
@@ -192,9 +245,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     //gets and stores info from facebook
     func storesInfoFromFB(){
-        let profilePicRef = storageRef.child(user!.uid+"/profile_pic.jpg")
         
-        
+        let profilePicRef = storageRef.child(userID!+"/profile_pic.jpg")
         FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, id, gender, email, picture.type(large)"]).startWithCompletionHandler{(connection, result, error) -> Void in
             
             if error != nil {
@@ -203,63 +255,31 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             }
             
             if let name = result ["name"] as? String {
-                self.dataRef.child("user").child("\(self.user!.uid)/name").setValue(name)
-                self.name.text = name
+                self.dataRef.child("user").child(self.userID!).child("name").setValue(name)
+                
             }
             
             if let profileID = result ["id"] as? String {
-                self.dataRef.child("user").child("\(self.user!.uid)/ID").setValue(profileID)
+                self.dataRef.child("user").child(self.userID!).child("ID").setValue(profileID)
             }
             
             if let gender = result ["gender"] as? String {
-                self.dataRef.child("user").child("\(self.user!.uid)/gender").setValue(gender)
+                self.dataRef.child("user").child(self.userID!).child("gender").setValue(gender)
             }
             
             if let picture = result["picture"] as? NSDictionary, data = picture["data"] as? NSDictionary,url = data["url"] as? String {
-                
-                //stores as cache
-                
-                if let image = self.profileImageCache.objectForKey(self.user!.uid) as? UIImage {
-                    self.profilePicture.image = image
-                }
-                
-                
-                //downloads image from FB
+            
                 if let imageData = NSData(contentsOfURL: NSURL (string:url)!) {
                     let uploadTask = profilePicRef.putData(imageData, metadata: nil){
                         metadata, error in
-                        if(error == nil)
-                        {
+                            
+                        if(error == nil) {
                             let downloadURL = metadata!.downloadURL
-                            
-                            // stores the firebase url into database
-                            profilePicRef.downloadURLWithCompletion { (URL, error) -> Void in
-                                if (error != nil) {
-                                    // Handle any errors
-                                }
-                                else {
-                                    self.dataRef.child("user").child("\(self.user!.uid)/picture").setValue("\(URL!)")
-                                }
-                            }
-                            
-                            //sets the image on profile
-                            profilePicRef.dataWithMaxSize(1 * 1024 * 1024) { (data, error) -> Void in
-                                if (error != nil) {
-                                    print ("File does not exist")
-                                } else {
-                                    if (data != nil){
-                                        self.profilePicture.image = UIImage(data:data!)
-                                        self.profileImageCache.setObject(UIImage(data:data!)!, forKey: self.user!.uid)
-                                    }
-                                }
-                            }
-                            
                         }
                         else{
                             print ("Error in downloading image")
                         }
                     }
-                    
                 }
             }
         }
@@ -294,23 +314,41 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func schoolInfo() {
-        storesInfoFromFB()
-        dataRef.child("user").child("\(user!.uid)").observeSingleEventOfType(.Value, withBlock: { (snapshot)
+        dataRef.child("user").child(userID!).observeSingleEventOfType(.Value, withBlock: { (snapshot)
             in
             
-            if ("\(snapshot.value!["school"])" == "nil" || "\(snapshot.value!["graduation year"])" == "nil" || "\(snapshot.value!["major"])" == "nil") {
-                return
+         
+            // Get user value
+            if let name = snapshot.value!["name"] as? String {
+                self.name.text = name
             }
-            else {
-                // Get user value
-                let school = snapshot.value!["school"] as! String
+            if let school = snapshot.value!["school"] as? String {
                 self.schoolNameLabel.text = school
-                let graduationYear = snapshot.value!["graduation year"] as! String
+            }
+            if let graduationYear = snapshot.value!["graduation year"] as? String {
                 self.graduationYearLabel.text = "Class of " + graduationYear
-                let major = snapshot.value!["major"] as! String
+            }
+            if let major = snapshot.value!["major"] as? String {
                 self.majorLabel.text = major
             }
+            
+            if let bioDescription = snapshot.value!["bio"] as? String {
+                self.bioTextView.text = bioDescription
+            }
         })
+    }
+    
+    
+    func getProfileImage() {
+        
+        let profilePicRef = storageRef.child(userID!+"/profile_pic.jpg")
+        profilePicRef.dataWithMaxSize(1 * 1024 * 1024) { (data, error) -> Void in
+            if (error != nil) {
+                // Uh-oh, an error occurred!
+            } else {
+               self.profilePicture.image = UIImage(data: data!)
+            }
+        }
     }
     
     
@@ -319,9 +357,10 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var changeBioButton: UIButton!
     
     @IBAction func changeBio(sender: AnyObject) {
-            changeBioButton.hidden = true
-            doneButton.hidden = false
-            self.bioTextView.editable = true
+        changeBioButton.hidden = true
+        doneButton.hidden = false
+        self.bioTextView.editable = true
+        self.secondView.hidden = false
     }
 
     //done editing bio
@@ -335,11 +374,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         doneButton.hidden = true
         self.bioTextView.editable = false
         self.dataRef.child("user").child(user!.uid).child("bio").setValue(bioTextView.text)
-    }
-    
-
-    
-    
+        self.secondView.hidden = true
+        }
 
     
 }
